@@ -27,6 +27,6 @@ return [
      * [ 'manager-name' => [ "\\App\\User", "FullNamespace\\namespace" ]  ]
      */
     "managers"         => [
-        "myth" => ["App\\User"],
+        "manager-name" => ["App\\User"],
     ],
 ];
