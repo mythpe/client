@@ -1,0 +1,43 @@
+{
+  "name": "4myth/client",
+  "type": "library",
+  "description": "Sync Data With Application",
+  "keywords": [
+    "Myth",
+    "4myth",
+    "sync"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmed Fayez",
+      "email": "mythpe@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "laravel/framework": ">=5.8",
+    "ext-json": "*"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Myth\\Api\\Client\\": "src/"
+    },
+    "files": [
+      "src/Helpers/Functions.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Myth\\Api\\Client\\Providers\\ClientProvider"
+      ],
+      "aliases": {
+        "Myth\\Api\\Client": "Myth\\Api\\Client\\Facades\\Client"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
